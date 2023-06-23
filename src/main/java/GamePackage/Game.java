@@ -21,9 +21,10 @@ public class Game {
 
     public void startGame(){
         dealer.requestCard();
+        dealer.requestCard();
         player.requestCard();
         player.requestCard();
-        System.out.println("Dealer's starting card is " + dealer.getHandValue());
+        System.out.println("Dealer's starting hand is " + dealer.getHandValue());
         System.out.println("Player's starting hand is " + player.getHandValue());
     }
 }
