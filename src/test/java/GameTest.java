@@ -28,4 +28,18 @@ public class GameTest {
         assertEquals(2, game.getPlayer().getHandSize());
         assertEquals(1, game.getDealer().getHandSize());
     }
+
+//    @Test
+//    public void playerGoesBustAt21(){
+//        game.startGame();
+//        assertEquals(0,game.getPlayer().requestCard());
+//    }
+
+//    @Test
+//    public void dealerSticksAt17(){
+//        game.startGame();
+//        game.getDealer().requestCard();
+//        assertEquals(0,game.getDealer().requestCard());
+//    }
+
 }

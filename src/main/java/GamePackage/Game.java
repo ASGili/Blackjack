@@ -4,10 +4,6 @@ import PlayerPackage.Dealer;
 import PlayerPackage.Player;
 
 public class Game {
-
-    public static void main(String[] args) {
-    }
-
     private Player dealer;
     private Player player;
 
@@ -27,5 +23,7 @@ public class Game {
         dealer.requestCard();
         player.requestCard();
         player.requestCard();
+        System.out.println("Dealer's starting card is " + dealer.getHandValue());
+        System.out.println("Player's starting hand is " + player.getHandValue());
     }
 }

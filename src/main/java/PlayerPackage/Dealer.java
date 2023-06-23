@@ -11,7 +11,7 @@ public class Dealer extends Player {
         Card newCard = new Card();
         if (getHandValue() < 16) {
             addCard(newCard);
-            if (getHandValue() > 21) {
+            if (getHandValue() > 16) {
                 return (messageBust + getHandValue());}
             else {
                 return (messageNotBust + getHandValue());}
