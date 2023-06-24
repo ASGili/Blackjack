@@ -61,7 +61,7 @@ public static void play(char playerInput){
 
             int dealerValue = game.getDealer().getHandValue();
             
-            if(playerValue < dealerValue && dealerValue <21) {
+            if(playerValue < dealerValue && dealerValue <=21) {
             System.out.println("Dealer wins.");
             } else {
             System.out.println("Player wins.");
