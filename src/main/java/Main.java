@@ -46,22 +46,29 @@ public static void play(char playerInput){
 }
     
     public static void gameEnd(){ 
-        game.getDealer().requestCard();
-        game.getDealer().requestCard();
-        game.getDealer().requestCard();
-        game.getDealer().requestCard();
+       int playerValue = game.getPlayer().getHandValue();
 
-        int playerValue = game.getPlayer().getHandValue();
-        int dealerValue = game.getDealer().getHandValue();
         if (playerValue > 21) {
             System.out.println("Dealer wins.");
-        } else if (playerValue < dealerValue) {
-            System.out.println("Dealer draws to " + game.getDealer().getHandValue() );
+        } else {
+            game.getDealer().requestCard();
+            game.getDealer().requestCard();
+            game.getDealer().requestCard();
+            game.getDealer().requestCard();
+            game.getDealer().requestCard();
+            game.getDealer().requestCard();
+            game.getDealer().requestCard();
+
+            int dealerValue = game.getDealer().getHandValue();
+            
+            if(playerValue < dealerValue && dealerValue <21) {
             System.out.println("Dealer wins.");
-        }else {
-            System.out.println("Dealer draws to " + game.getDealer().getHandValue() );
-            System.out.println("Player wins.");}
+            } else {
+            System.out.println("Player wins.");
+            }
+        }
     }
+
     public static boolean move(char x) {
           if (x == 'y')
                return true;

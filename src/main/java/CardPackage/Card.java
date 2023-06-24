@@ -11,7 +11,6 @@ public class Card {
     public Card(){
         this.cardValue = CardValue.values()[randomNumber];
         this.name = cardValue.getName();
-
     }
 
     public int getCardValue(){

@@ -11,11 +11,15 @@ public class Dealer extends Player {
         Card newCard = new Card();
         if (getHandValue() < 16) {
             addCard(newCard);
+            System.out.println(messageBust + getHandValue());
             if (getHandValue() > 16) {
-                return (messageBust + getHandValue());}
+                return (messageBust + getHandValue());
+            }
             else {
-                return (messageNotBust + getHandValue());}
+                return (messageNotBust + getHandValue());
+            }
         } else {
-            return messageBust + getHandValue();}
+            return messageBust;
+        }
     }
 }

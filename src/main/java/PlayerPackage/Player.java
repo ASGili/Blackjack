@@ -32,7 +32,7 @@ public class Player {
         String messageNotBust = "Would you like another card? Your total is: ";
         String messageBust = "You have gone bust: ";
         Card newCard = new Card();
-        if (getHandValue() < 21) {
+        if (getHandValue() <= 21) {
             addCard(newCard);
             if (getHandValue() > 21) {
                 return (messageBust + getHandValue());}
