@@ -7,7 +7,7 @@ public class Dealer extends Player {
     @Override
     public String requestCard(){
         String messageNotBust = "Would you like another card? Your total is: ";
-        String messageBust = "The dealer's value is: ";
+        String messageBust = "The dealer draws to: ";
         Card newCard = new Card();
         if (getHandValue() < 16) {
             addCard(newCard);
