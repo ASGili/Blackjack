@@ -1,7 +1,4 @@
 import java.util.Scanner;
-
-import javax.sound.sampled.SourceDataLine;
-
 import GamePackage.Game;
 
 public class Main {
